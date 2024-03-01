@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      code {
+        background-color: bisque;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>First-class Functions</h2>
+    <ul>
+      <li>
+        <p>
+          Bir funksiya boshqa bir funksiyani argument sifatida qabul qilishi va
+          bunin uchun parametr tozilganda codga unning oldiga
+          <code>()</code> qoyib yoyish kerak
+        </p>
+      </li>
+      <li>
+        <p>
+          Bir funksiya <code>return</code> sifatida boshqa funkisyani qaytarishi
+          va funksiyani ichidagi funksyani ishlatish uchun , osh afunksyani
+          oldihga yana bitta <code>()</code> qoyiladi,yoki bitta ozgaruvchi
+          ochib turib unga funksiyani beramiz , va endi funksyani chaqirush
+          uchun ozgaruvchini chaqirganimizda uni oldiga bitta
+          <code>()</code> qoyamiz
+        </p>
+      </li>
+      <li>
+        <p>
+          Funksiya biror bir o’zgaruvchiga tenglanib, o’sha o’zgaruvchi nomi
+          bilan chaqirilishi va osh ozgaruvchini oldig <code>()</code> qoyib
+          chaqiramiz
+        </p>
+      </li>
+    </ul>
+    <h2>Array Metodlari</h2>
+    <!-- <h3>Bularni barchasi faqatgina malumotini butunlay saqlab oldai</h3> -->
+    <ul>
+      <li>
+        <p>
+          <code>some()</code> Bu metod hudi biz bilgan <code>||</code> shartiga
+          ohshaydi , <code>some()</code> ishlatganimzda biz uni ichiga bitta
+          collback funksiya yozamiz , va uni ichida doyim
+          <code>return</code> kalit sozi bolish kerak . Some ozi nima qiladi ?
+          ,Some biz bergan maumotini olib uni teshiradi va ichida bitta bolsa
+          ham biz bergan malumotga true javobi qayatsa bizgaham
+          <code>true</code> qaytaradi , va osh joyda ishlashdi tohtatadi,agar
+          yoq bolsa folse qaytaradi
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>every()</code> some kabi ishlatiladi faqat endi bu biz bilgan
+          <code>&&</code> ga ohshaydi endi har bitta elemet shartni qoniqtirishi
+          shart bolmasa bizga folse qiymati qaytadi <br />
+          <code
+            >Agar functionda return kalit sozi kelsa bu fenksiya doyim biron bir
+            ozgaruvchiga teng bolish kerak</code
+          >
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>filtr()</code> bu metod some va every kabi yozildai , va bu
+          filtirlaydi yani ajtatinb chiqadi va unga berilgan ozgaruvchiga array
+          holatida saqlaydi
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>find()</code> ichiga colback fangshin yoziladi , return kalit
+          sozi ishlatiladi va bu bizga osha element bolsa oshani olib kerib
+          beradi , agar soralgan element ikkata yoki undan kop , unda bizga
+          doyim birinchisini qayataradi
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>findIndex()</code> ozi nomidan bilinb turibrti elmentni
+          nechinchi indexda turganini qaytaradi
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>sort()</code>Agar sorta hechqanday paramert bermasdan sortlasak
+          ular UTF-16 “расшифровка” bo’yicha taqqoslanadi, patametr berib
+          taqoslash uchun colback function ishlatamiz , retun kalit sozi bilan.
+          sortni ishlatish uchun functionga ikkta parametr yoziladi va ular bir
+          biridan ayriladi , va bizga javob osyatgan yoki pasoyotgan raqamlar
+          tuzilishi keladi . <code>[...copy]sotr()</code> shu holata ishlatmasak
+          bizdagi boshidagi arraydi tuzilishini ozgartirib yuboradi , bu yerda
+          copy arraydi nomi
+          
+        </p>
+      </li>
+    </ul>
+    <script src="./app.js"></script>
+  </body>
+</html>
